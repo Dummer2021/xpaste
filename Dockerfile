@@ -1,7 +1,7 @@
 FROM ruby:2.6.0-alpine3.7
 
 ENV WEB_PORT 80
-ENV BUILD_PACKAGES nginx nodejs dcron tzdata postgresql-dev libxslt-dev
+ENV BUILD_PACKAGES nginx nodejs dcron tzdata postgresql-dev libxslt-dev shared-mime-info
 ENV BUILD_TMP_PACKAGES build-base libxml2-dev
 
 WORKDIR /app
